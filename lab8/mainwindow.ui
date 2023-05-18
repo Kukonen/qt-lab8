@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1021</width>
+    <height>779</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>20</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableBroker">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>361</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_broker_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>добавить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_broker_btn">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>290</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>удалить</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableCompany">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>50</y>
+      <width>581</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_company_btn">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>290</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>добавить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_company_btn">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>290</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>удалить</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableDeal">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>891</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="brokerInput">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>610</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>id брокера</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="companyInput">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>610</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>id компании</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="amountInput">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>610</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>количество</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buy_btn">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>610</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Покупка</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sell_btn">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>610</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Продажа</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="undo_company_btn">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>290</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>востановить</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1021</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>Куконен Евгений ЛР8</string>
+    </property>
+   </widget>
+   <addaction name="menu_8"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

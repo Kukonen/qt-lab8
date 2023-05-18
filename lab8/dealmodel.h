@@ -1,0 +1,28 @@
+#ifndef DEALMODEL_H
+#define DEALMODEL_H
+
+#include <QObject>
+#include <QAbstractTableModel>
+#include <deal.h>
+
+class DealModel : public QAbstractTableModel
+{
+public:
+    DealModel(QObject* parent = nullptr);
+
+    int rowCount(const QModelIndex& parent = QModelIndex()) const override;
+    int columnCount(const QModelIndex& parent = QModelIndex()) const override;
+    QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const override;
+    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
+    bool setData(const QModelIndex& index, const QVariant& value, int role = Qt::EditRole) override;
+    Qt::ItemFlags flags(const QModelIndex& index) const override;
+
+    void addDeal(const Deal& deal);
+    void removeDeal(int row);
+    void updateDeal(int row, const Deal& deal);
+
+private:
+    QList<Deal> deals;
+};
+
+#endif // DEALMODEL_H
